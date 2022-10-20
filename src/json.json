@@ -1,1101 +1,1069 @@
 {
-  "type": "week",
-  "period": {
-    "start": "03.10.2022",
-    "end": "09.10.2022"
-  },
-  "requests": {
-    "current": 128,
-    "previous": 25,
-    "max": {
-      "date": "03.10.2022",
-      "count": 35
+    "type": "week",
+    "period": {
+        "start": "03.10.2022",
+        "end": "09.10.2022"
     },
-    "min": {
-      "date": "06.10.2022",
-      "count": 17
+    "requests": {
+        "current": 128,
+        "previous": 25,
+        "max": {
+            "date": "03.10.2022",
+            "count": 35
+        },
+        "min": {
+            "date": "06.10.2022",
+            "count": 17
+        },
+        "grades": [
+            {
+                "name": "lead",
+                "count": 7,
+                "percent": 5.47,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "senior",
+                "count": 28,
+                "percent": 21.88,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "senior/middle+",
+                "count": 12,
+                "percent": 9.38,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "senior/middle",
+                "count": 9,
+                "percent": 7.03,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "middle+",
+                "count": 4,
+                "percent": 3.13,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "middle+/middle",
+                "count": 1,
+                "percent": 0.78,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "middle+/junior+",
+                "count": 1,
+                "percent": 0.78,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "middle",
+                "count": 14,
+                "percent": 10.94,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "middle/junior",
+                "count": 1,
+                "percent": 0.78,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "junior",
+                "count": 1,
+                "percent": 0.78,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "без грейда",
+                "count": 50,
+                "percent": 39.06,
+                "previous": null,
+                "percent_previous": null
+            }
+        ],
+        "area": [
+            {
+                "name": "FE",
+                "count": 5,
+                "percent": 3.91,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "BE",
+                "count": 63,
+                "percent": 49.22,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "Fullstack",
+                "count": 7,
+                "percent": 5.47,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "SA,BA,QA,PM",
+                "count": 18,
+                "percent": 14.06,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "DevOps",
+                "count": 12,
+                "percent": 9.38,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "Mobile",
+                "count": 18,
+                "percent": 14.06,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "Design",
+                "count": 3,
+                "percent": 2.34,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "1С, Bitrix",
+                "count": 2,
+                "percent": 1.56,
+                "previous": null,
+                "percent_previous": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "frontend",
+                "values": [
+                    {
+                        "name": "React",
+                        "count": 3
+                    },
+                    {
+                        "name": "Angular",
+                        "count": 3
+                    },
+                    {
+                        "name": "Верстальщик",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "backend",
+                "values": [
+                    {
+                        "name": "Spark",
+                        "count": 1
+                    },
+                    {
+                        "name": "Java",
+                        "count": 2
+                    },
+                    {
+                        "name": "C#",
+                        "count": 3
+                    },
+                    {
+                        "name": "ML",
+                        "count": 1
+                    },
+                    {
+                        "name": "Yii2",
+                        "count": 1
+                    },
+                    {
+                        "name": "Architect",
+                        "count": 1
+                    },
+                    {
+                        "name": ".Net",
+                        "count": 1
+                    },
+                    {
+                        "name": "Python",
+                        "count": 3
+                    },
+                    {
+                        "name": "Разработчик DWH",
+                        "count": 1
+                    },
+                    {
+                        "name": "Symfony",
+                        "count": 1
+                    },
+                    {
+                        "name": "Laravel",
+                        "count": 1
+                    },
+                    {
+                        "name": "C++",
+                        "count": 2
+                    },
+                    {
+                        "name": "Oracle",
+                        "count": 2
+                    },
+                    {
+                        "name": "NodeJS",
+                        "count": 1
+                    },
+                    {
+                        "name": "PERL",
+                        "count": 1
+                    },
+                    {
+                        "name": "Sys admin CASSANDRA",
+                        "count": 1
+                    },
+                    {
+                        "name": "SQL",
+                        "count": 2
+                    },
+                    {
+                        "name": "ETL",
+                        "count": 1
+                    },
+                    {
+                        "name": "ETL",
+                        "count": 1
+                    },
+                    {
+                        "name": "Native HANA",
+                        "count": 1
+                    },
+                    {
+                        "name": "Data Engineer",
+                        "count": 1
+                    },
+                    {
+                        "name": "Go",
+                        "count": 1
+                    },
+                    {
+                        "name": "Data Admin",
+                        "count": 1
+                    },
+                    {
+                        "name": "NodeJS+Python",
+                        "count": 1
+                    },
+                    {
+                        "name": "PHP",
+                        "count": 4
+                    },
+                    {
+                        "name": "Delphi",
+                        "count": 1
+                    },
+                    {
+                        "name": "Drupal",
+                        "count": 1
+                    },
+                    {
+                        "name": "NestJS",
+                        "count": 1
+                    },
+                    {
+                        "name": "Ruby",
+                        "count": 1
+                    },
+                    {
+                        "name": "Data analyst",
+                        "count": 2
+                    },
+                    {
+                        "name": "Data Quality",
+                        "count": 2
+                    },
+                    {
+                        "name": "PostgreSQL",
+                        "count": 2
+                    }
+                ]
+            },
+            {
+                "name": "fullstack",
+                "values": [
+                    {
+                        "name": "React+NodeJS",
+                        "count": 2
+                    },
+                    {
+                        "name": "JS+C#",
+                        "count": 2
+                    },
+                    {
+                        "name": "React+WordPress",
+                        "count": 1
+                    },
+                    {
+                        "name": "Vue+Laravel",
+                        "count": 1
+                    },
+                    {
+                        "name": "React+PHP",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "devops",
+                "values": [
+                    {
+                        "name": "DevOps",
+                        "count": 12
+                    }
+                ]
+            },
+            {
+                "name": "mobile",
+                "values": [
+                    {
+                        "name": "iOS",
+                        "count": 9
+                    },
+                    {
+                        "name": "React Native",
+                        "count": 1
+                    },
+                    {
+                        "name": "Android",
+                        "count": 3
+                    },
+                    {
+                        "name": "Kotlin",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "name": "mobile",
+                "values": [
+                    {
+                        "name": "iOS",
+                        "count": 9
+                    },
+                    {
+                        "name": "React Native",
+                        "count": 1
+                    },
+                    {
+                        "name": "Android",
+                        "count": 3
+                    },
+                    {
+                        "name": "Kotlin",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "name": "design",
+                "values": [
+                    {
+                        "name": "Designer",
+                        "count": 1
+                    },
+                    {
+                        "name": "Content manager",
+                        "count": 1
+                    },
+                    {
+                        "name": "Game Designer",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "1С, Bitrix",
+                "values": [
+                    {
+                        "name": "Bitrix",
+                        "count": 1
+                    },
+                    {
+                        "name": "1С",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "SA,BA,QA,PM",
+                "values": [
+                    {
+                        "name": "BA",
+                        "count": 6
+                    },
+                    {
+                        "name": "SA",
+                        "count": 9
+                    },
+                    {
+                        "name": "QA",
+                        "count": 1
+                    },
+                    {
+                        "name": "PM",
+                        "count": 2
+                    }
+                ]
+            }
+        ]
     },
-    "grades": [
-      {
-        "name": "lead",
-        "count": 7,
-        "percent": 5.47,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "senior",
-        "count": 28,
-        "percent": 21.88,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "senior/middle+",
-        "count": 12,
-        "percent": 9.38,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "senior/middle",
-        "count": 9,
-        "percent": 7.03,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "middle+",
-        "count": 4,
-        "percent": 3.13,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "middle+/middle",
-        "count": 1,
-        "percent": 0.78,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "middle+/junior+",
-        "count": 1,
-        "percent": 0.78,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "middle",
-        "count": 14,
-        "percent": 10.94,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "middle/junior",
-        "count": 1,
-        "percent": 0.78,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "junior",
-        "count": 1,
-        "percent": 0.78,
-        "previous": null,
-        "percent_previous": null
-      },
-      {
-        "name": "без грейда",
-        "count": 50,
-        "percent": 39.06,
-        "previous": null,
-        "percent_previous": null
-      }
-    ],
-    "area": [
-      {
-        "name": "FE",
-        "count": 5,
-        "percent": 3.91,
-        "previous": null,
-        "percent_previous": null
 
-      },
-      {
-        "name": "BE",
-        "count": 63,
-        "percent": 49.22,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "Fullstack",
-        "count": 7,
-        "percent": 5.47,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "SA,BA,QA,PM",
-        "count": 18,
-        "percent": 14.06,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "DevOps",
-        "count": 12,
-        "percent": 9.38,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "Mobile",
-        "count": 18,
-        "percent": 14.06,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "Design",
-        "count": 3,
-        "percent": 2.34,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "1С, Bitrix",
-        "count": 2,
-        "percent": 1.56,
-        "previous": null,
-        "percent_previous": null
-
-      }
-    ],
-    "tools": [
-      {
-        "name": "frontend",
-        "values": [
-          {
-            "name": "React",
-            "count": 3
-          },
-          {
-            "name": "Angular",
-            "count": 3
-          },
-          {
-            "name": "Верстальщик",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": "backend",
-        "values": [
-          {
-            "name": "Spark",
-            "count": 1
-          },
-          {
-            "name": "Java",
-            "count": 2
-          },
-          {
-            "name": "C#",
-            "count": 3
-          },
-          {
-            "name": "ML",
-            "count": 1
-          },
-          {
-            "name": "Yii2",
-            "count": 1
-          },
-          {
-            "name": "Architect",
-            "count": 1
-          },
-          {
-            "name": ".Net",
-            "count": 1
-          },
-          {
-            "name": "Python",
-            "count": 3
-          },
-          {
-            "name": "Разработчик DWH",
-            "count": 1
-          },
-          {
-            "name": "Symfony",
-            "count": 1
-          },
-          {
-            "name": "Laravel",
-            "count": 1
-          },
-          {
-            "name": "C++",
-            "count": 2
-          },
-          {
-            "name": "Oracle",
-            "count": 2
-          },
-          {
-            "name": "NodeJS",
-            "count": 1
-          },
-          {
-            "name": "PERL",
-            "count": 1
-          },
-          {
-            "name": "Sys admin CASSANDRA",
-            "count": 1
-          },
-          {
-            "name": "SQL",
-            "count": 2
-          },
-          {
-            "name": "ETL",
-            "count": 1
-          },
-          {
-            "name": "ETL",
-            "count": 1
-          },
-          {
-            "name": "Native HANA",
-            "count": 1
-          },
-          {
-            "name": "Data Engineer",
-            "count": 1
-          },
-          {
-            "name": "Go",
-            "count": 1
-          },
-          {
-            "name": "Data Admin",
-            "count": 1
-          },
-          {
-            "name": "NodeJS+Python",
-            "count": 1
-          },
-          {
-            "name": "PHP",
-            "count": 4
-          },
-          {
-            "name": "Delphi",
-            "count": 1
-          },
-          {
-            "name": "Drupal",
-            "count": 1
-          },
-          {
-            "name": "NestJS",
-            "count": 1
-          },
-          {
-            "name": "Ruby",
-            "count": 1
-          },
-          {
-            "name": "Data analyst",
-            "count": 2
-          },
-          {
-            "name": "Data Quality",
-            "count": 2
-          },
-          {
-            "name": "PostgreSQL",
-            "count": 2
-          }
-        ]
-      },
-      {
-        "name": "fullstack",
-        "values": [
-          {
-            "name": "React+NodeJS",
-            "count": 2
-          },
-          {
-            "name": "JS+C#",
-            "count": 2
-          },
-          {
-            "name": "React+WordPress",
-            "count": 1
-          },
-          {
-            "name": "Vue+Laravel",
-            "count": 1
-          },
-          {
-            "name": "React+PHP",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": "devops",
-        "values": [
-          {
-            "name": "DevOps",
-            "count": 12
-          }
-        ]
-      },
-      {
-        "name": "mobile",
-        "values": [
-          {
-            "name": "iOS",
-            "count": 9
-          },
-          {
-            "name": "React Native",
-            "count": 1
-          },
-          {
-            "name": "Android",
-            "count": 3
-          },
-          {
-            "name": "Kotlin",
-            "count": 5
-          }
-        ]
-      },
-      {
-        "name": "mobile",
-        "values": [
-          {
-            "name": "iOS",
-            "count": 9
-          },
-          {
-            "name": "React Native",
-            "count": 1
-          },
-          {
-            "name": "Android",
-            "count": 3
-          },
-          {
-            "name": "Kotlin",
-            "count": 5
-          }
-        ]
-      },
-      {
-        "name": "design",
-        "values": [
-          {
-            "name": "Designer",
-            "count": 1
-          },
-          {
-            "name": "Content manager",
-            "count": 1
-          },
-          {
-            "name": "Game Designer",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": "1С, Bitrix",
-        "values": [
-          {
-            "name": "Bitrix",
-            "count": 1
-          },
-          {
-            "name": "1С",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": "SA,BA,QA,PM",
-        "values": [
-          {
-            "name": "BA",
-            "count": 6
-          },
-          {
-            "name": "SA",
-            "count": 9
-          },
-          {
-            "name": "QA",
-            "count": 1
-          },
-          {
-            "name": "PM",
-            "count": 2
-          }
-        ]
-      }
-    ]
-  },
-
-  "developers": {
-    "current": 129,
-    "previous": 103,
-    "max": {
-      "date": "03.10.2022",
-      "count": 56
-    },
-    "min": {
-      "date": "06.10.2022",
-      "count": 23
-    },
-    "area": [
-      {
-        "name": "FE",
-        "count": 137,
-        "percent": 22.39,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "BE",
-        "count": 177,
-        "percent": 28.92,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "Fullstack",
-        "count": 48,
-        "percent": 7.84,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "SA,BA,QA,PM",
-        "count": 74,
-        "percent": 12.09,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "DevOps",
-        "count": 25,
-        "percent": 4.08,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "Mobile",
-        "count": 101,
-        "percent": 16.50,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "Design",
-        "count": 41,
-        "percent": 6.70,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "1С, Bitrix",
-        "count": 9,
-        "percent": 1.47,
-        "previous": null,
-        "percent_previous": null
-
-      }
-    ],
-    "grades": [
-      {
-        "name": "lead",
-        "count": 13,
-        "percent": 2.12,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "senior",
-        "count": 136,
-        "percent": 22.22,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "senior/middle+",
-        "count": 1,
-        "percent": 0.82,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "senior/middle",
-        "count": 9,
-        "percent": 0.16,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "middle+",
-        "count": 65,
-        "percent": 10.62,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "middle",
-        "count": 229,
-        "percent": 37.42,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "junior+",
-        "count": 10,
-        "percent": 1.63,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "junior",
-        "count": 11,
-        "percent": 1.80,
-        "previous": null,
-        "percent_previous": null
-
-      },
-      {
-        "name": "без грейда",
-        "count": 142,
-        "percent": 23.20,
-        "previous": null,
-        "percent_previous": null
-
-      }
-    ],
-    "tools": [
-      {
-        "name": "frontend",
-        "values":  [
-          {
-            "name": "React",
-            "count": 72
-          },
-          {
-            "name": "Vue",
+    "developers": {
+        "current": 129,
+        "previous": 103,
+        "max": {
+            "date": "03.10.2022",
+            "count": 56
+        },
+        "min": {
+            "date": "06.10.2022",
             "count": 23
-          },
-          {
-            "name": "Angular",
-            "count": 18
-          },
-          {
-            "name": "JS",
-            "count": 3
-          },
-          {
-            "name": "React+Angular",
-            "count": 11
-          },
-          {
-            "name": "React+Vue",
-            "count": 7
-          },
-          {
-            "name": "Nuxt",
-            "count": 1
-          },
-          {
-            "name": "Верстальщик",
-            "count": 1
-          },
-          {
-            "name": "Magento",
-            "count": 1
-          }
+        },
+        "area": [
+            {
+                "name": "FE",
+                "count": 137,
+                "percent": 22.39,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "BE",
+                "count": 177,
+                "percent": 28.92,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "Fullstack",
+                "count": 48,
+                "percent": 7.84,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "SA,BA,QA,PM",
+                "count": 74,
+                "percent": 12.09,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "DevOps",
+                "count": 25,
+                "percent": 4.08,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "Mobile",
+                "count": 101,
+                "percent": 16.5,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "Design",
+                "count": 41,
+                "percent": 6.7,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "1С, Bitrix",
+                "count": 9,
+                "percent": 1.47,
+                "previous": null,
+                "percent_previous": null
+            }
+        ],
+        "grades": [
+            {
+                "name": "lead",
+                "count": 13,
+                "percent": 2.12,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "senior",
+                "count": 136,
+                "percent": 22.22,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "senior/middle+",
+                "count": 1,
+                "percent": 0.82,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "senior/middle",
+                "count": 9,
+                "percent": 0.16,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "middle+",
+                "count": 65,
+                "percent": 10.62,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "middle",
+                "count": 229,
+                "percent": 37.42,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "junior+",
+                "count": 10,
+                "percent": 1.63,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "junior",
+                "count": 11,
+                "percent": 1.8,
+                "previous": null,
+                "percent_previous": null
+            },
+            {
+                "name": "без грейда",
+                "count": 142,
+                "percent": 23.2,
+                "previous": null,
+                "percent_previous": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "frontend",
+                "values": [
+                    {
+                        "name": "React",
+                        "count": 72
+                    },
+                    {
+                        "name": "Vue",
+                        "count": 23
+                    },
+                    {
+                        "name": "Angular",
+                        "count": 18
+                    },
+                    {
+                        "name": "JS",
+                        "count": 3
+                    },
+                    {
+                        "name": "React+Angular",
+                        "count": 11
+                    },
+                    {
+                        "name": "React+Vue",
+                        "count": 7
+                    },
+                    {
+                        "name": "Nuxt",
+                        "count": 1
+                    },
+                    {
+                        "name": "Верстальщик",
+                        "count": 1
+                    },
+                    {
+                        "name": "Magento",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "backend",
+                "values": [
+                    {
+                        "name": "Python",
+                        "count": 48
+                    },
+                    {
+                        "name": ".Net",
+                        "count": 15
+                    },
+                    {
+                        "name": "Xamarin",
+                        "count": 2
+                    },
+                    {
+                        "name": "Bubble",
+                        "count": 1
+                    },
+                    {
+                        "name": "NodeJS",
+                        "count": 12
+                    },
+                    {
+                        "name": "Laravel",
+                        "count": 4
+                    },
+                    {
+                        "name": "Java",
+                        "count": 36
+                    },
+                    {
+                        "name": "Ruby",
+                        "count": 3
+                    },
+                    {
+                        "name": "C#",
+                        "count": 4
+                    },
+                    {
+                        "name": "C++",
+                        "count": 1
+                    },
+                    {
+                        "name": "PHP",
+                        "count": 28
+                    },
+                    {
+                        "name": "BigData",
+                        "count": 1
+                    },
+                    {
+                        "name": "Symfony",
+                        "count": 1
+                    },
+                    {
+                        "name": "WordPress",
+                        "count": 1
+                    },
+                    {
+                        "name": "SQL",
+                        "count": 1
+                    },
+                    {
+                        "name": "PHP+NodeJS",
+                        "count": 1
+                    },
+                    {
+                        "name": "Unity",
+                        "count": 4
+                    },
+                    {
+                        "name": "Django",
+                        "count": 1
+                    },
+                    {
+                        "name": "NodeJS+PHP",
+                        "count": 1
+                    },
+                    {
+                        "name": "Java+Go",
+                        "count": 2
+                    },
+                    {
+                        "name": "QA",
+                        "count": 1
+                    },
+                    {
+                        "name": "Python+Ruby",
+                        "count": 1
+                    },
+                    {
+                        "name": "Go",
+                        "count": 4
+                    },
+                    {
+                        "name": "Yii2",
+                        "count": 2
+                    },
+                    {
+                        "name": "PHP+Go",
+                        "count": 1
+                    },
+                    {
+                        "name": "PHP+Go",
+                        "Solidity": 1
+                    }
+                ]
+            },
+            {
+                "name": "fullstack",
+                "values": [
+                    {
+                        "name": "Vue+Laravel",
+                        "count": 2
+                    },
+                    {
+                        "name": "React+python",
+                        "count": 2
+                    },
+                    {
+                        "name": "JS+PHP",
+                        "count": 6
+                    },
+                    {
+                        "name": "React+NodeJS",
+                        "count": 15
+                    },
+                    {
+                        "name": "Angular+NodeJS",
+                        "count": 1
+                    },
+                    {
+                        "name": "Vue+NodeJS",
+                        "count": 1
+                    },
+                    {
+                        "name": "React+React Native",
+                        "count": 3
+                    },
+                    {
+                        "name": "React+.Net",
+                        "count": 1
+                    },
+                    {
+                        "name": "Angular+.Net",
+                        "count": 2
+                    },
+                    {
+                        "name": "JS+.Net",
+                        "count": 1
+                    },
+                    {
+                        "name": "Vue+PHP",
+                        "count": 5
+                    },
+                    {
+                        "name": "React+PHP",
+                        "count": 2
+                    },
+                    {
+                        "name": "JS+Python",
+                        "count": 1
+                    },
+                    {
+                        "name": "React+Python",
+                        "count": 2
+                    },
+                    {
+                        "name": "Vue+Java",
+                        "count": 1
+                    },
+                    {
+                        "name": "Vue+WordPress",
+                        "count": 1
+                    },
+                    {
+                        "name": "Python+Go",
+                        "count": 1
+                    },
+                    {
+                        "name": "Vue+C++",
+                        "count": 1
+                    },
+                    {
+                        "name": "Angular+Java",
+                        "count": 1
+                    },
+                    {
+                        "name": "React+WordPress",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "SA,BA,QA,PM",
+                "values": [
+                    {
+                        "name": "QA",
+                        "count": 38
+                    },
+                    {
+                        "name": "BA",
+                        "count": 8
+                    },
+                    {
+                        "name": "SA",
+                        "count": 14
+                    },
+                    {
+                        "name": "BA+SA",
+                        "count": 7
+                    },
+                    {
+                        "name": "PM",
+                        "count": 3
+                    },
+                    {
+                        "name": "Технический писарь",
+                        "count": 1
+                    },
+                    {
+                        "name": "AQA",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "name": "DevOps",
+                "values": [
+                    {
+                        "name": "QA",
+                        "count": 1
+                    },
+                    {
+                        "name": "DevOps",
+                        "count": 22
+                    },
+                    {
+                        "name": "Android",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Mobile",
+                "values": [
+                    {
+                        "name": "Android",
+                        "count": 32
+                    },
+                    {
+                        "name": "iOS",
+                        "count": 38
+                    },
+                    {
+                        "name": "Flutter",
+                        "count": 19
+                    },
+                    {
+                        "name": "React Native",
+                        "count": 7
+                    },
+                    {
+                        "name": "Android+iOS",
+                        "count": 1
+                    },
+                    {
+                        "name": "Kotlin",
+                        "count": 2
+                    },
+                    {
+                        "name": "UX/UI",
+                        "count": 1
+                    },
+                    {
+                        "name": "Dart",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Design",
+                "values": [
+                    {
+                        "name": "Designer",
+                        "count": 2
+                    },
+                    {
+                        "name": "UX/UI",
+                        "count": 37
+                    },
+                    {
+                        "name": "Game designer",
+                        "count": 1
+                    },
+                    {
+                        "name": "Motion designer",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "name": " 1С, Bitrix",
+                "values": [
+                    {
+                        "name": "Bitrix",
+                        "count": 7
+                    },
+                    {
+                        "name": "1C",
+                        "count": 1
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "backend",
-        "values":  [
-          {
-            "name": "Python",
-            "count": 48
-          },
-          {
-            "name": ".Net",
-            "count": 15
-          },
-          {
-            "name": "Xamarin",
-            "count": 2
-          },
-          {
-            "name": "Bubble",
-            "count": 1
-          },
-          {
-            "name": "NodeJS",
-            "count": 12
-          },
-          {
-            "name": "Laravel",
-            "count": 4
-          },
-          {
-            "name": "Java",
-            "count": 36
-          },
-          {
-            "name": "Ruby",
-            "count": 3
-          },
-          {
-            "name": "C#",
-            "count": 4
-          },
-          {
-            "name": "C++",
-            "count": 1
-          },
-          {
-            "name": "PHP",
-            "count": 28
-          },
-          {
-            "name": "BigData",
-            "count": 1
-          },
-          {
-            "name": "Symfony",
-            "count": 1
-          },
-          {
-            "name": "WordPress",
-            "count": 1
-          },
-          {
-            "name": "SQL",
-            "count": 1
-          },
-          {
-            "name": "PHP+NodeJS",
-            "count": 1
-          },
-          {
-            "name": "Unity",
-            "count": 4
-          },
-          {
-            "name": "Django",
-            "count": 1
-          },
-          {
-            "name": "NodeJS+PHP",
-            "count": 1
-          },
-          {
-            "name": "Java+Go",
-            "count": 2
-          },
-          {
-            "name": "QA",
-            "count": 1
-          },
-          {
-            "name": "Python+Ruby",
-            "count": 1
-          },
-          {
-            "name": "Go",
-            "count": 4
-          },
-          {
-            "name": "Yii2",
-            "count": 2
-          },
-          {
-            "name": "PHP+Go",
-            "count": 1
-          },
-          {
-            "name": "PHP+Go",
-            "Solidity": 1
-          }
-        ]
-      },
-      {
-        "name": "fullstack",
-        "values": [
-          {
-            "name":"Vue+Laravel",
-            "count": 2
-          },
-          {
-            "name":"React+python",
-            "count": 2
-          },
-          {
-            "name":"JS+PHP",
-            "count": 6
-          },
-          {
-            "name":"React+NodeJS",
-            "count": 15
-          },
-          {
-            "name":"Angular+NodeJS",
-            "count": 1
-          },
-          {
-            "name":"Vue+NodeJS",
-            "count": 1
-          },
-          {
-            "name":"React+React Native",
-            "count": 3
-          },
-          {
-            "name":"React+.Net",
-            "count": 1
-          },
-          {
-            "name":"Angular+.Net",
-            "count": 2
-          },
-          {
-            "name":"JS+.Net",
-            "count": 1
-          },
-          {
-            "name":"Vue+PHP",
-            "count": 5
-          },
-          {
-            "name":"React+PHP",
-            "count": 2
-          },
-          {
-            "name":"JS+Python",
-            "count": 1
-          },
-          {
-            "name":"React+Python",
-            "count": 2
-          },
-          {
-            "name":"Vue+Java",
-            "count": 1
-          },
-          {
-            "name":"Vue+WordPress",
-            "count": 1
-          },
-          {
-            "name":"Python+Go",
-            "count": 1
-          },
-          {
-            "name":"Vue+C++",
-            "count": 1
-          },
-          {
-            "name":"Angular+Java",
-            "count": 1
-          },
-          {
-            "name":"React+WordPress",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": "SA,BA,QA,PM",
-        "values": [
-          {
-            "name":"QA",
-            "count": 38
-          },
-          {
-            "name":"BA",
-            "count": 8
-          },
-          {
-            "name":"SA",
-            "count": 14
-          },
-          {
-            "name":"BA+SA",
-            "count": 7
-          },
-          {
-            "name":"PM",
-            "count": 3
-          },
-          {
-            "name":"Технический писарь",
-            "count": 1
-          },
-          {
-            "name":"AQA",
-            "count": 3
-          }
-        ]
-      },
-      {
-        "name": "DevOps",
-        "values": [
-          {
-            "name":"QA",
-            "count": 1
-          },
-          {
-            "name":"DevOps",
-            "count": 22
-          },
-          {
-            "name":"Android",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": "Mobile",
-        "values": [
-          {
-            "name": "Android",
-            "count": 32
-          },
-          {
-            "name": "iOS",
-            "count": 38
-          },
-          {
-            "name": "Flutter",
-            "count": 19
-          },
-          {
-            "name": "React Native",
-            "count": 7
-          },
-          {
-            "name": "Android+iOS",
-            "count": 1
-          },
-          {
-            "name": "Kotlin",
-            "count": 2
-          },
-          {
-            "name": "UX/UI",
-            "count": 1
-          },
-          {
-            "name": "Dart",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": "Design",
-        "values": [
-          {
-            "name": "Designer",
-            "count": 2
-          },
-          {
-            "name": "UX/UI",
-            "count": 37
-          },
-          {
-            "name": "Game designer",
-            "count": 1
-          },
-          {
-            "name": "Motion designer",
-            "count": 1
-          }
-        ]
-      },
-      {
-        "name": " 1С, Bitrix",
-        "values": [
-          {
-            "name": "Bitrix",
-            "count": 7
-          },
-          {
-            "name": "1C",
-            "count": 1
-          }
-        ]
-      }
-
+    },
+    "total": [
+        {
+            "name": "lead",
+            "stack": "React",
+            "query": 2300,
+            "offer": null
+        },
+        {
+            "name": "senior",
+            "stack": "DevOps",
+            "query": 1900,
+            "offer": null
+        },
+        {
+            "name": "senior",
+            "stack": "Bitrix",
+            "query": 2000,
+            "offer": null
+        },
+        {
+            "name": "middle/senior",
+            "stack": "SA",
+            "query": 1800,
+            "offer": null
+        },
+        {
+            "name": "middle",
+            "stack": "JS+C#",
+            "query": 1850,
+            "offer": null
+        },
+        {
+            "name": "middle+/senior",
+            "stack": "PHP",
+            "query": 1700,
+            "offer": null
+        },
+        {
+            "name": "middle+/senior",
+            "stack": "Python",
+            "query": 1700,
+            "offer": null
+        },
+        {
+            "name": "senior",
+            "stack": "SA",
+            "query": 1950,
+            "offer": 2075
+        },
+        {
+            "name": "senior",
+            "stack": "PHP",
+            "query": 1800,
+            "offer": null
+        },
+        {
+            "name": "middle+/senior",
+            "stack": "iOS",
+            "query": 2200,
+            "offer": null
+        },
+        {
+            "name": "middle+",
+            "stack": "iOS",
+            "query": null,
+            "offer": 1362.5
+        },
+        {
+            "name": "senior",
+            "stack": "Java",
+            "query": null,
+            "offer": 2475
+        },
+        {
+            "name": "middle+",
+            "stack": "Java",
+            "query": null,
+            "offer": 2200
+        },
+        {
+            "name": "middle+",
+            "stack": "SA",
+            "query": null,
+            "offer": 2000
+        },
+        {
+            "name": "middle",
+            "stack": "Java+Go",
+            "query": null,
+            "offer": 2350
+        },
+        {
+            "name": "junior+",
+            "stack": "Java+Go",
+            "query": null,
+            "offer": 1950
+        },
+        {
+            "name": "junior+",
+            "stack": "Python",
+            "query": null,
+            "offer": 2100
+        },
+        {
+            "name": "middle",
+            "stack": "React",
+            "query": null,
+            "offer": 1500
+        },
+        {
+            "name": "junior+",
+            "stack": "QA",
+            "query": null,
+            "offer": 1400
+        },
+        {
+            "name": "middle",
+            "stack": ".Net",
+            "query": null,
+            "offer": 1400
+        },
+        {
+            "name": "senior",
+            "stack": "UX/UI",
+            "query": null,
+            "offer": 2000
+        },
+        {
+            "name": "middle",
+            "stack": "UX/UI",
+            "query": null,
+            "offer": 2000
+        },
+        {
+            "name": "senior",
+            "stack": "1C",
+            "query": null,
+            "offer": 2000
+        }
     ]
-  },
-  "total": [
-    {
-      "name": "lead",
-      "stack": "React",
-      "query": 2300,
-      "offer": null
-    },
-    {
-      "name": "senior",
-      "stack": "DevOps",
-      "query": 1900,
-      "offer": null
-    },
-    {
-      "name": "senior",
-      "stack": "Bitrix",
-      "query": 2000,
-      "offer": null
-    },
-    {
-      "name": "middle/senior",
-      "stack": "SA",
-      "query": 1800,
-      "offer": null
-    },
-    {
-      "name": "middle",
-      "stack": "JS+C#",
-      "query": 1850,
-      "offer": null
-    },
-    {
-      "name": "middle+/senior",
-      "stack": "PHP",
-      "query": 1700,
-      "offer": null
-    },
-    {
-      "name": "middle+/senior",
-      "stack": "Python",
-      "query": 1700,
-      "offer": null
-    },
-    {
-      "name": "senior",
-      "stack": "SA",
-      "query": 1950,
-      "offer": 2075
-    },
-    {
-      "name": "senior",
-      "stack": "PHP",
-      "query": 1800,
-      "offer": false
-    },
-    {
-      "name": "senior",
-      "stack": "PHP",
-      "query": 1800,
-      "offer": null
-    },
-    {
-      "name": "middle+/senior",
-      "stack": "iOS",
-      "query": 2200,
-      "offer": null
-    },
-    {
-      "name": "middle+",
-      "stack": "iOS",
-      "query": null,
-      "offer": 1362.5
-    },
-    {
-      "name": "senior",
-      "stack": "Java",
-      "query": null,
-      "offer": 2475
-    },
-    {
-      "name": "middle+",
-      "stack": "Java",
-      "query": null,
-      "offer": 2200
-    },
-    {
-      "name": "middle+",
-      "stack": "SA",
-      "query": null,
-      "offer": 2000
-    },
-    {
-      "name": "middle",
-      "stack": "Java+Go",
-      "query": null,
-      "offer": 2350
-    },
-    {
-      "name": "junior+",
-      "stack": "Java+Go",
-      "query": null,
-      "offer": 1950
-    },
-    {
-      "name": "junior+",
-      "stack": "Python",
-      "query": null,
-      "offer": 2100
-    },
-    {
-      "name": "middle",
-      "stack": "React",
-      "query": null,
-      "offer": 1500
-    },
-    {
-      "name": "junior+",
-      "stack": "QA",
-      "query": null,
-      "offer": 1400
-    },
-    {
-      "name": "middle",
-      "stack": ".Net",
-      "query": null,
-      "offer": 1400
-    },
-    {
-      "name": "senior",
-      "stack": "UX/UI",
-      "query": null,
-      "offer": 2000
-    },
-    {
-      "name": "middle",
-      "stack": "UX/UI",
-      "query": null,
-      "offer": 2000
-    },
-    {
-      "name": "senior",
-      "stack": "1C",
-      "query": null,
-      "offer": 2000
-    }
-  ]
 }

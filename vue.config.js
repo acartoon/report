@@ -5,26 +5,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = defineConfig({
   transpileDependencies: true,
   css: {
-    loaderOptions: {
-      sass: {
-        additionalData: `
-            @import "@/assets/scss/styles.scss";
-            `
-      }
+    extract: false,
+  },
+  pages: {
+    index: {
+      entry: 'src/main.js',
+      title: 'Еженедельный отчет заявок и предложений',
+    },
+  },
+  configureWebpack: config => {
+    if(config.mode === 'production') {
+      config.plugins = [
+          ...config.plugins,
+        new HtmlInlineScriptPlugin(),
+        new HtmlWebpackPlugin ({
+          template: "./public/index.html",
+          filename: 'report.html',
+          inject: 'body',
+        }),
+      ]
     }
   }
-  // configureWebpack: {
-  //   plugins: [
-  //     new HtmlInlineScriptPlugin()
-  //   ]
-  // }
 })
-
-//   plugins: [
-//     new VueLoaderPlugin(),
-//     new HtmlWebpackPlugin ({
-//       template: "./index.html",
-//     inject: 'body',
-//   }),
-//     new HtmlInlineScriptPlugin(),
-//   ],

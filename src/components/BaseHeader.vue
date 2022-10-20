@@ -1,38 +1,74 @@
 <template>
     <BaseContainer>
         <div :class="$style.wrapper">
-            <div :class="$style.image">
-                <img src="https://arda.ws-dev.ru/img/ITARDA.db1a7e3b.png" alt="Лого арды">
-            </div>
-            <div :class="$style.image">
-                <img src="https://arda.ws-dev.ru/img/ITARDA.db1a7e3b.png" alt="IT Pelag">
-            </div>
+            <a :href="arda" target="_blank" :class="$style.image">
+                <LogoArda />
+            </a>
+            <a :href="itPelag" target="_blank" :class="$style.image">
+                <LogoItPelag />
+            </a>
         </div>
-        <h1 :class="$style.heading">
-            Еженедельный отчет заявок и предложений за период с
-            03.10 - 09.10
-        </h1>
+        <BaseHeading :class="$style.heading" tag="h1">
+            {{ title }} отчет заявок и предложений за период с {{ start }} по
+            {{ end }}
+        </BaseHeading>
+        <BaseHeading :class="$style.subheading" tag="h4">
+            Компания
+            <base-link :to="itPelag" target="_blank">IT-Pelag</base-link>
+            в рамках
+            <base-link :to="arda"
+                >IT-кластера ассоциации развития digital-агентств
+                ARDA</base-link
+            >
+            проводит ежедневный мониторинг открытых источников, в которых
+            размещаются запросы на проекты и информация о свободных
+            разработчиков.
+        </BaseHeading>
     </BaseContainer>
 </template>
 
 <script>
-import BaseContainer from "@/components/BaseContainer";
+import BaseContainer from '@/UI/BaseContainer'
+import BaseHeading from '@/UI/BaseHeading'
+import LogoArda from '@/components/LogoArda'
+import LogoItPelag from '@/components/LogoItPelag'
+import BaseLink from '@/UI/BaseLink'
+import { ARDA_SITE, IT_PELAG_SITE } from '@/constants'
 export default {
-    name: "BaseHeader",
-    components: {BaseContainer},
+    name: 'BaseHeader',
+    props: ['start', 'end', 'type'],
+    components: { BaseLink, LogoArda, BaseContainer, BaseHeading, LogoItPelag },
+    data() {
+        return {
+            arda: ARDA_SITE,
+            itPelag: IT_PELAG_SITE,
+        }
+    },
+    computed: {
+        title() {
+            const titles = {
+                week: 'Еженедельный',
+                month: 'Ежемесячный',
+                quarter: 'Квартальный',
+            }
+            console.log(this.type)
+            return titles[this.type]
+        },
+    },
 }
 </script>
 
 <style module>
-
 .wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+    padding-top: 20px;
 }
 
 .image {
-    width: 90px;
+    width: 15%;
+    min-width: 90px;
 }
 .image img {
     max-width: 100%;
@@ -41,15 +77,21 @@ export default {
 
 .heading {
     text-align: center;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 60px;
 }
 
-@media(min-width: 576px) {
+.subheading {
     text-align: center;
-    font-size: 70px;
-    line-height: 80px;
-    margin-bottom: 80px;
+    letter-spacing: 0.01rem;
+}
+
+@media (min-width: 576px) {
+    .heading {
+        text-align: center;
+        /*margin-bottom: 30px;*/
+    }
+
+    .subheading {
+        margin: 0 auto;
+    }
 }
 </style>

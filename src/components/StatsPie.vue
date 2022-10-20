@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h3 :class="$style.title">{{title}}</h3>
+        <BaseHeading :class="$style.title" tag="h4">{{ title }}</BaseHeading>
         <ChartPie
-                :class="$style.wrapper"
+            :class="$style.wrapper"
             :label="labels"
             :data="datasets"
             :title="false"
@@ -11,11 +11,12 @@
 </template>
 
 <script>
-import ChartPie from "@/components/ChartPie";
+import ChartPie from '@/UI/ChartPie'
+import BaseHeading from '@/UI/BaseHeading'
 
 export default {
     name: 'StatsPie',
-    components: {ChartPie},
+    components: { ChartPie, BaseHeading },
     props: ['dataKey', 'title', 'data'],
     computed: {
         datasets() {
@@ -24,12 +25,11 @@ export default {
         labels() {
             return this.data.map((el) => el.name)
         },
-    }
+    },
 }
 </script>
 
 <style module>
-
 .title {
     text-align: center;
     margin-bottom: 20px;

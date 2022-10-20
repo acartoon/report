@@ -1,27 +1,18 @@
 <template>
-    <BaseHeader />
-    <StartInfo
-        :start="period.start"
-        :end="period.end"
-        :projects="projectsStats"
-        :developers="developersStats"
-    />
-    <TotalStats
-        :requests="requests"
-        :developers="developers"
-    />
-
+    <BaseHeader :start="period.start" :end="period.end" :type="type" />
+    <StartInfo :projects="projectsStats" :developers="developersStats" />
+    <TotalStats :requests="requests" :developers="developers" :total="total" />
 </template>
 
 <script>
-import BaseHeader from "./components/BaseHeader.vue";
-import axios from 'axios';
-import StartInfo from "@/components/StartInfo";
+import BaseHeader from './components/BaseHeader.vue'
+import axios from 'axios'
+import StartInfo from '@/components/StartInfo'
 import json from './json.json'
-import TotalStats from "@/components/TotalStats";
+import TotalStats from '@/components/TotalStats'
 
 export default {
-    components: {StartInfo, BaseHeader, TotalStats},
+    components: { StartInfo, BaseHeader, TotalStats },
     data() {
         return {
             type: json.type,
@@ -42,8 +33,8 @@ export default {
     // },
     methods: {
         async getData() {
-            return axios.get('/json.json');
-        }
+            return axios.get('/json.json')
+        },
     },
     computed: {
         datasets() {
@@ -67,18 +58,28 @@ export default {
                 max: this.developers.max,
                 min: this.developers.min,
             }
-        }
-    }
+        },
+    },
 }
 </script>
 <style>
 html {
-    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    color: #494d4e;
+    color: #3c3f40;
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 body {
     margin: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.base-wrapper {
+    margin-bottom: 120px;
 }
 </style>

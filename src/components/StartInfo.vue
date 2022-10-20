@@ -1,53 +1,115 @@
 <template>
     <BaseContainer>
-        <h2>
-        Компания IT-Pelag в рамках IT-кластера ассоциации развития digital-агентств ARDA  проводит ежедневный мониторинг открытых источников, в которых размещаются запросы на проекты и информация о свободных разработчиков.
-        </h2>
-        <p>В выборки участвуют следующие источники:</p>
-        <ul>
-            <li
-                :key="idx"
-                v-for="(source, idx) in sources">
-                {{source.name}} ( {{source.link}} )
-            </li>
-        </ul>
+        <div class="base-wrapper">
+            <BaseHeading :class="$style.subheading" tag="h3"
+                >В выборки участвуют следующие источники:</BaseHeading
+            >
+            <ol :class="$style.list">
+                <li
+                    :class="$style.listItem"
+                    :key="idx"
+                    v-for="(source, idx) in sources"
+                >
+                    {{ source.name }} (<base-link
+                        :to="source.link"
+                        target="_blank"
+                        >{{ source.link }}</base-link
+                    >)
+                </li>
+            </ol>
+        </div>
+        <div class="base-wrapper">
+            <BaseHeading :class="$style.subheading" tag="h4"
+                >Количество запросов/разработчиков</BaseHeading
+            >
+            <BaseTable
+                :heading="['', 'Текущая неделя', 'Предыдущая неделя']"
+                :data="[
+                    ['Запросы', projects.current, projects.previous],
+                    ['Разработчики', developers.current, developers.previous],
+                ]"
+            />
+        </div>
 
-        <p>В данном отчете рассмотрен период с {{start}} по {{end}}</p>
-
-        <p> Всего уникальных запросов (проектов) -  {{projects.current}}
-            (неделю назад было {{projects.previous}})
-        </p>
-
-        <p> Всего уникальных свободных разработчиков -  {{developers.current}}
-            (неделю назад было {{developers.previous}})
-        </p>
-
-        <p>Больше всего запросов {{projects.max.count}} было в понедельник, {{projects.max.date}},
-            а меньше всего {{projects.min.count}} в пятницу {{projects.min.date}}
-        </p>
-
-        <p>Больше всего свободных разработчиков {{developers.max.count}} опубликовали в понедельник, {{developers.max.date}},
-            а меньше всего {{developers.min.count}} в пятницу {{developers.min.date}}
-        </p>
+        <div class="base-wrapper">
+            <BaseHeading :class="$style.subheading" tag="h4"
+                >Максимум/минимум</BaseHeading
+            >
+            <BaseTable
+                :heading="['', 'Максимум', 'Минимум']"
+                :data="[
+                    [
+                        'Запросы',
+                        `${projects.max.count} (${projects.max.date})`,
+                        `${projects.min.count} (${projects.min.date})`,
+                    ],
+                    [
+                        'Разработчики',
+                        `${developers.max.count} (${developers.max.date})`,
+                        `${developers.min.count} (${developers.min.date})`,
+                    ],
+                ]"
+            />
+        </div>
     </BaseContainer>
 </template>
 
 <script>
-import sources from "@/sources";
-import BaseContainer from "@/components/BaseContainer";
+import sources from '@/sources'
+import BaseContainer from '@/UI/BaseContainer'
+import BaseHeading from '@/UI/BaseHeading'
+import BaseTable from '@/UI/BaseTable'
+import BaseLink from '@/UI/BaseLink'
 
 export default {
     name: 'StartInfo',
-    props: ['start', 'end', 'projects', 'developers'],
-    components: {BaseContainer },
+    props: ['projects', 'developers'],
+    components: { BaseContainer, BaseHeading, BaseTable, BaseLink },
     data() {
         return {
             sources: sources,
         }
-    }
+    },
 }
 </script>
 
-<style scoped>
+<style module>
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: counter;
+}
 
+.listItem {
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.listItem:before {
+    counter-increment: counter;
+    content: counter(counter) '. ';
+    left: 0;
+}
+
+.subheading {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .listItem {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 10px 15px;
+    }
+}
 </style>
