@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BaseHeading :class="$style.title" tag="h4">{{ title }}</BaseHeading>
+        <BaseHeading :class="$style.title" tag="h3">{{ title }}</BaseHeading>
         <ChartBar
             :class="$style.wrapper"
             :label="labels"

@@ -2,7 +2,7 @@
     <BaseContainer>
         <div class="base-wrapper">
             <BaseHeading :class="$style.subheading" tag="h3"
-                >В выборки участвуют следующие источники:</BaseHeading
+                >Источники выборки:</BaseHeading
             >
             <ol :class="$style.list">
                 <li
@@ -19,8 +19,8 @@
             </ol>
         </div>
         <div class="base-wrapper">
-            <BaseHeading :class="$style.subheading" tag="h4"
-                >Количество запросов/разработчиков</BaseHeading
+            <BaseHeading :class="$style.subheading" tag="h2"
+                >1. Количество запросов/разработчиков</BaseHeading
             >
             <BaseTable
                 :heading="['', 'Текущая неделя', 'Предыдущая неделя']"
@@ -32,8 +32,8 @@
         </div>
 
         <div class="base-wrapper">
-            <BaseHeading :class="$style.subheading" tag="h4"
-                >Максимум/минимум</BaseHeading
+            <BaseHeading :class="$style.subheading" tag="h2"
+                >2. Максимум/минимум запросов/разработчиков</BaseHeading
             >
             <BaseTable
                 :heading="['', 'Максимум', 'Минимум']"

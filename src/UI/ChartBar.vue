@@ -32,7 +32,7 @@ ChartJS.register(
     LinearScale,
     ArcElement
 )
-const luminosity = 'blue'
+// const luminosity = 'blue'
 
 export default {
     components: { Bar },
@@ -46,7 +46,7 @@ export default {
         size() {
             return {
                 width: 100,
-                height: this.media.type !== 'lg' ? 100 : 50,
+                height: this.media.type !== 'lg' ? 100 : 30,
             }
         },
     },
@@ -59,7 +59,7 @@ export default {
                     {
                         data: this.data,
                         backgroundColor: randomColor({
-                            hue: luminosity,
+                            luminosity: 'light',
                             count: this.data.length,
                         }),
                         hoverOffset: 4,
@@ -101,8 +101,10 @@ export default {
 }
 </script>
 
-<style module>
+<style module lang="scss">
 .wrapper {
-    width: 60%;
+    @media (min-width: 768px) {
+        width: 90%;
+    }
 }
 </style>

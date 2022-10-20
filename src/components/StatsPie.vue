@@ -5,7 +5,8 @@
             :class="$style.wrapper"
             :label="labels"
             :data="datasets"
-            :title="false"
+            :title="labels"
+            :colors="colors"
         />
     </div>
 </template>
@@ -17,7 +18,7 @@ import BaseHeading from '@/UI/BaseHeading'
 export default {
     name: 'StatsPie',
     components: { ChartPie, BaseHeading },
-    props: ['dataKey', 'title', 'data'],
+    props: ['dataKey', 'title', 'data', 'colors'],
     computed: {
         datasets() {
             return this.data.map((el) => el[this.dataKey])

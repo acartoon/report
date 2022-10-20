@@ -4,11 +4,7 @@
 
 <script>
 import BaseTable from '@/UI/BaseTable'
-function compareNumeric(a, b) {
-    if (a.percent > b.percent) return 1
-    if (a.percent == b.percent) return 0
-    if (a.percent < b.percent) return -1
-}
+import compareNumeric from '@/helpers/compareNumeric'
 
 export default {
     name: 'TablePercent',
@@ -22,7 +18,8 @@ export default {
                 .map((el) => {
                     const current = {
                         name: el.name,
-                        current: `${el.percent}% (${el.count})`,
+                        percent: `${el.percent}%`,
+                        count: el.count,
                     }
                     if (el.previous) {
                         current.previous = `${el.percent_previous}% (${el.previous})`

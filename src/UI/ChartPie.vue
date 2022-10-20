@@ -37,26 +37,33 @@ const luminosity = 'blue'
 export default {
     components: { Pie },
     name: 'ChartPie',
-    props: ['label', 'data', 'title'],
+    props: ['label', 'data', 'title', 'colors', 'showLabel'],
     data() {
+        const colors =
+            this.colors ||
+            randomColor({
+                hue: luminosity,
+                count: this.data.length,
+            })
         return {
             chartData: {
                 labels: this.label,
                 datasets: [
                     {
-                        label: 'My First Dataset',
+                        // label: 'My First Dataset',
                         data: this.data,
-                        backgroundColor: randomColor({
-                            hue: luminosity,
-                            count: this.data.length,
-                        }),
+                        backgroundColor: colors,
                         hoverOffset: 4,
                     },
                 ],
             },
             options: {
+                labels: {
+                    display: false,
+                },
                 responsive: true,
                 color: '#494d4e',
+
                 // fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
                 // font: "'Roboto', 'Helvetica', 'Arial', sans-serif",
                 plugins: {
@@ -67,6 +74,7 @@ export default {
                         },
                     },
                     legend: {
+                        display: this.showLabel,
                         position: 'top',
                         labels: {
                             padding: 10,

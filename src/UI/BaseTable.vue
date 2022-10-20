@@ -13,7 +13,12 @@
                         :key="el"
                         v-for="el in Object.values(item).filter((i) => !!i)"
                     >
-                        {{ el }}
+                        <span
+                            :class="$style.color"
+                            v-if="el.color"
+                            :style="{ background: el.color }"
+                        ></span>
+                        {{ el.text || el }}
                     </td>
                 </tr>
             </table>
@@ -62,6 +67,7 @@ export default {
 
 .tr:nth-child(even) {
     background: #accbe8;
+    background: #e8e9eb;
     transition: background-color 150ms ease-in;
 }
 
@@ -74,12 +80,20 @@ export default {
     background: transparent;
 }
 .th {
-    padding: 8px;
-
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.01rem;
+    padding: 6px;
     font-weight: 500;
 }
 
 .th:first-child {
     text-align: left;
+}
+
+.color {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
 }
 </style>

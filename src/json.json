@@ -87,7 +87,7 @@
                 "percent_previous": null
             },
             {
-                "name": "без грейда",
+                "name": "без рейда",
                 "count": 50,
                 "percent": 39.06,
                 "previous": null,
@@ -560,7 +560,7 @@
                 "percent_previous": null
             },
             {
-                "name": "без грейда",
+                "name": "без рейда",
                 "count": 142,
                 "percent": 23.2,
                 "previous": null,
@@ -946,16 +946,34 @@
             "offer": null
         },
         {
-            "name": "middle/senior",
+            "name": "senior",
             "stack": "SA",
+            "query": 1950,
+            "offer": 2075
+        },
+        {
+            "name": "senior",
+            "stack": "PHP",
             "query": 1800,
             "offer": null
         },
         {
-            "name": "middle",
-            "stack": "JS+C#",
-            "query": 1850,
-            "offer": null
+            "name": "senior",
+            "stack": "Java",
+            "query": null,
+            "offer": 2475
+        },
+        {
+            "name": "senior",
+            "stack": "UX/UI",
+            "query": null,
+            "offer": 2000
+        },
+        {
+            "name": "senior",
+            "stack": "1C",
+            "query": null,
+            "offer": 2000
         },
         {
             "name": "middle+/senior",
@@ -970,21 +988,15 @@
             "offer": null
         },
         {
-            "name": "senior",
-            "stack": "SA",
-            "query": 1950,
-            "offer": 2075
-        },
-        {
-            "name": "senior",
-            "stack": "PHP",
-            "query": 1800,
-            "offer": null
-        },
-        {
             "name": "middle+/senior",
             "stack": "iOS",
             "query": 2200,
+            "offer": null
+        },
+        {
+            "name": "middle/senior",
+            "stack": "SA",
+            "query": 1800,
             "offer": null
         },
         {
@@ -992,12 +1004,6 @@
             "stack": "iOS",
             "query": null,
             "offer": 1362.5
-        },
-        {
-            "name": "senior",
-            "stack": "Java",
-            "query": null,
-            "offer": 2475
         },
         {
             "name": "middle+",
@@ -1010,6 +1016,30 @@
             "stack": "SA",
             "query": null,
             "offer": 2000
+        },
+        {
+            "name": "middle",
+            "stack": ".Net",
+            "query": null,
+            "offer": 1400
+        },
+        {
+            "name": "middle",
+            "stack": "UX/UI",
+            "query": null,
+            "offer": 2000
+        },
+        {
+            "name": "middle",
+            "stack": "JS+C#",
+            "query": 1850,
+            "offer": null
+        },
+        {
+            "name": "middle",
+            "stack": "React",
+            "query": null,
+            "offer": 1500
         },
         {
             "name": "middle",
@@ -1030,40 +1060,10 @@
             "offer": 2100
         },
         {
-            "name": "middle",
-            "stack": "React",
-            "query": null,
-            "offer": 1500
-        },
-        {
             "name": "junior+",
             "stack": "QA",
             "query": null,
             "offer": 1400
-        },
-        {
-            "name": "middle",
-            "stack": ".Net",
-            "query": null,
-            "offer": 1400
-        },
-        {
-            "name": "senior",
-            "stack": "UX/UI",
-            "query": null,
-            "offer": 2000
-        },
-        {
-            "name": "middle",
-            "stack": "UX/UI",
-            "query": null,
-            "offer": 2000
-        },
-        {
-            "name": "senior",
-            "stack": "1C",
-            "query": null,
-            "offer": 2000
         }
     ]
 }

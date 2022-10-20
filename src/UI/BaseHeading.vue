@@ -22,6 +22,8 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.02rem;
     margin: 3rem 0 1.38rem;
     font-weight: 400;
     line-height: 1.3;

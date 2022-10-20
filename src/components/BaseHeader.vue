@@ -9,14 +9,16 @@
             </a>
         </div>
         <BaseHeading :class="$style.heading" tag="h1">
-            {{ title }} отчет заявок и предложений за период с {{ start }} по
-            {{ end }}
+            {{ title }} отчет заявок и предложений
+        </BaseHeading>
+        <BaseHeading :class="$style.subtitle" tag="h3">
+            период с {{ start }} по {{ end }}
         </BaseHeading>
         <BaseHeading :class="$style.subheading" tag="h4">
             Компания
             <base-link :to="itPelag" target="_blank">IT-Pelag</base-link>
             в рамках
-            <base-link :to="arda"
+            <base-link :to="arda" target="_blank"
                 >IT-кластера ассоциации развития digital-агентств
                 ARDA</base-link
             >
@@ -34,6 +36,7 @@ import LogoArda from '@/components/LogoArda'
 import LogoItPelag from '@/components/LogoItPelag'
 import BaseLink from '@/UI/BaseLink'
 import { ARDA_SITE, IT_PELAG_SITE } from '@/constants'
+
 export default {
     name: 'BaseHeader',
     props: ['start', 'end', 'type'],
@@ -58,12 +61,18 @@ export default {
 }
 </script>
 
-<style module>
+<style module lang="scss">
 .wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
     padding-top: 20px;
+    border-bottom: 7px double #3c3f40;
+    padding-bottom: 10px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 120px;
+    }
 }
 
 .image {
@@ -76,6 +85,12 @@ export default {
 }
 
 .heading {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    margin-top: 0 !important;
     text-align: center;
 }
 

@@ -1,4 +1,4 @@
-export const ARDA_SITE = 'https://itpelag.com/'
+export const ARDA_SITE = 'https://arda.digital/groups/outstaff'
 export const IT_PELAG_SITE = 'https://itpelag.com/'
 
 export const label = (context) => {
