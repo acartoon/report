@@ -6,10 +6,9 @@
 
 <script>
 import BaseHeader from './components/BaseHeader.vue'
-import axios from 'axios'
 import StartInfo from '@/components/StartInfo'
-import json from './json.json'
 import TotalStats from '@/components/TotalStats'
+import json from './10_10.json'
 
 export default {
     components: { StartInfo, BaseHeader, TotalStats },
@@ -21,20 +20,6 @@ export default {
             developers: json.developers,
             total: json.total,
         }
-    },
-    // mounted() {
-    //     this.getData().then(({type, period, requests,developers, total  }) => {
-    //         this.type = type;
-    //         this.period = period;
-    //         this.requests = requests;
-    //         this.developers = developers;
-    //         this.total = total;
-    //     })
-    // },
-    methods: {
-        async getData() {
-            return axios.get('/json.json')
-        },
     },
     computed: {
         datasets() {

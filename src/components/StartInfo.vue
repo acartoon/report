@@ -22,13 +22,7 @@
             <BaseHeading :class="$style.subheading" tag="h2"
                 >1. Количество запросов/разработчиков</BaseHeading
             >
-            <BaseTable
-                :heading="['', 'Текущая неделя', 'Предыдущая неделя']"
-                :data="[
-                    ['Запросы', projects.current, projects.previous],
-                    ['Разработчики', developers.current, developers.previous],
-                ]"
-            />
+            <BaseTable :heading="stats.heading" :data="stats.data" />
         </div>
 
         <div class="base-wrapper">
@@ -69,6 +63,32 @@ export default {
         return {
             sources: sources,
         }
+    },
+    computed: {
+        stats() {
+            const data = [
+                ['Запросы', this.projects.current],
+                ['Разработчики', this.developers.current],
+            ]
+
+            if (this.projects.previous) {
+                data[0].push(this.projects.previous)
+            }
+            if (this.developers.previous) {
+                data[1].push(this.developers.previous)
+            }
+
+            const heading = ['', 'Текущая неделя']
+
+            if (this.projects.previous || this.developers.previous) {
+                heading.push('Предыдущая неделя')
+            }
+
+            return {
+                data,
+                heading,
+            }
+        },
     },
 }
 </script>

@@ -6,14 +6,13 @@
     },
     "requests": {
         "current": 128,
-        "previous": 25,
         "max": {
-            "date": "03.10.2022",
-            "count": 35
+            "date": "06.10.2022",
+            "count": 44
         },
         "min": {
-            "date": "06.10.2022",
-            "count": 17
+            "date": "04.10.2022",
+            "count": 9
         },
         "grades": [
             {
@@ -162,7 +161,7 @@
                     },
                     {
                         "name": "Angular",
-                        "count": 3
+                        "count": 1
                     },
                     {
                         "name": "Верстальщик",
@@ -179,7 +178,7 @@
                     },
                     {
                         "name": "Java",
-                        "count": 2
+                        "count": 11
                     },
                     {
                         "name": "C#",
@@ -195,11 +194,11 @@
                     },
                     {
                         "name": "Architect",
-                        "count": 1
+                        "count": 3
                     },
                     {
                         "name": ".Net",
-                        "count": 1
+                        "count": 7
                     },
                     {
                         "name": "Python",
@@ -215,7 +214,7 @@
                     },
                     {
                         "name": "Laravel",
-                        "count": 1
+                        "count": 2
                     },
                     {
                         "name": "C++",
@@ -246,7 +245,7 @@
                         "count": 1
                     },
                     {
-                        "name": "ETL",
+                        "name": "C++",
                         "count": 1
                     },
                     {
@@ -259,7 +258,7 @@
                     },
                     {
                         "name": "Go",
-                        "count": 1
+                        "count": 2
                     },
                     {
                         "name": "Data Admin",
@@ -295,11 +294,15 @@
                     },
                     {
                         "name": "Data Quality",
+                        "count": 1
+                    },
+                    {
+                        "name": "Data Analyst",
                         "count": 2
                     },
                     {
                         "name": "PostgreSQL",
-                        "count": 2
+                        "count": 1
                     }
                 ]
             },
@@ -329,32 +332,32 @@
                 ]
             },
             {
+                "name": "SA,BA,QA,PM",
+                "values": [
+                    {
+                        "name": "BA",
+                        "count": 6
+                    },
+                    {
+                        "name": "SA",
+                        "count": 9
+                    },
+                    {
+                        "name": "QA",
+                        "count": 1
+                    },
+                    {
+                        "name": "PM",
+                        "count": 2
+                    }
+                ]
+            },
+            {
                 "name": "devops",
                 "values": [
                     {
                         "name": "DevOps",
                         "count": 12
-                    }
-                ]
-            },
-            {
-                "name": "mobile",
-                "values": [
-                    {
-                        "name": "iOS",
-                        "count": 9
-                    },
-                    {
-                        "name": "React Native",
-                        "count": 1
-                    },
-                    {
-                        "name": "Android",
-                        "count": 3
-                    },
-                    {
-                        "name": "Kotlin",
-                        "count": 5
                     }
                 ]
             },
@@ -408,41 +411,19 @@
                         "count": 1
                     }
                 ]
-            },
-            {
-                "name": "SA,BA,QA,PM",
-                "values": [
-                    {
-                        "name": "BA",
-                        "count": 6
-                    },
-                    {
-                        "name": "SA",
-                        "count": 9
-                    },
-                    {
-                        "name": "QA",
-                        "count": 1
-                    },
-                    {
-                        "name": "PM",
-                        "count": 2
-                    }
-                ]
             }
         ]
     },
 
     "developers": {
-        "current": 129,
-        "previous": 103,
+        "current": 612,
         "max": {
             "date": "03.10.2022",
-            "count": 56
+            "count": 303
         },
         "min": {
-            "date": "06.10.2022",
-            "count": 23
+            "date": "07.10.2022",
+            "count": 26
         },
         "area": [
             {
@@ -519,14 +500,14 @@
             },
             {
                 "name": "senior/middle+",
-                "count": 1,
+                "count": 5,
                 "percent": 0.82,
                 "previous": null,
                 "percent_previous": null
             },
             {
                 "name": "senior/middle",
-                "count": 9,
+                "count": 1,
                 "percent": 0.16,
                 "previous": null,
                 "percent_previous": null
@@ -713,7 +694,7 @@
                         "count": 1
                     },
                     {
-                        "name": "PHP+Go",
+                        "name": "Solidity",
                         "Solidity": 1
                     }
                 ]
@@ -849,7 +830,7 @@
                     },
                     {
                         "name": "Android",
-                        "count": 1
+                        "count": 2
                     }
                 ]
             },
@@ -946,34 +927,16 @@
             "offer": null
         },
         {
-            "name": "senior",
+            "name": "middle/senior",
             "stack": "SA",
-            "query": 1950,
-            "offer": 2075
-        },
-        {
-            "name": "senior",
-            "stack": "PHP",
             "query": 1800,
             "offer": null
         },
         {
-            "name": "senior",
-            "stack": "Java",
-            "query": null,
-            "offer": 2475
-        },
-        {
-            "name": "senior",
-            "stack": "UX/UI",
-            "query": null,
-            "offer": 2000
-        },
-        {
-            "name": "senior",
-            "stack": "1C",
-            "query": null,
-            "offer": 2000
+            "name": "middle/senior",
+            "stack": "JS+C#",
+            "query": 1850,
+            "offer": null
         },
         {
             "name": "middle+/senior",
@@ -988,22 +951,34 @@
             "offer": null
         },
         {
-            "name": "middle+/senior",
-            "stack": "iOS",
-            "query": 2200,
-            "offer": null
+            "name": "senior",
+            "stack": "SA",
+            "query": 1950,
+            "offer": 2075
         },
         {
-            "name": "middle/senior",
-            "stack": "SA",
+            "name": "senior",
+            "stack": "PHP",
             "query": 1800,
             "offer": null
         },
         {
+            "name": "middle+/senior",
+            "stack": "IOS",
+            "query": 2200,
+            "offer": null
+        },
+        {
             "name": "middle+",
-            "stack": "iOS",
+            "stack": "UX/UI",
             "query": null,
             "offer": 1362.5
+        },
+        {
+            "name": "senior",
+            "stack": "Java",
+            "query": null,
+            "offer": 2475
         },
         {
             "name": "middle+",
@@ -1019,30 +994,6 @@
         },
         {
             "name": "middle",
-            "stack": ".Net",
-            "query": null,
-            "offer": 1400
-        },
-        {
-            "name": "middle",
-            "stack": "UX/UI",
-            "query": null,
-            "offer": 2000
-        },
-        {
-            "name": "middle",
-            "stack": "JS+C#",
-            "query": 1850,
-            "offer": null
-        },
-        {
-            "name": "middle",
-            "stack": "React",
-            "query": null,
-            "offer": 1500
-        },
-        {
-            "name": "middle",
             "stack": "Java+Go",
             "query": null,
             "offer": 2350
@@ -1054,16 +1005,46 @@
             "offer": 1950
         },
         {
-            "name": "junior+",
+            "name": "middle+",
             "stack": "Python",
             "query": null,
             "offer": 2100
+        },
+        {
+            "name": "middle",
+            "stack": "React",
+            "query": null,
+            "offer": 1500
         },
         {
             "name": "junior+",
             "stack": "QA",
             "query": null,
             "offer": 1400
+        },
+        {
+            "name": "middle",
+            "stack": ".Net",
+            "query": null,
+            "offer": 1400
+        },
+        {
+            "name": "senior",
+            "stack": "UX/UI",
+            "query": null,
+            "offer": 2000
+        },
+        {
+            "name": "middle",
+            "stack": "UX/UI",
+            "query": null,
+            "offer": 2000
+        },
+        {
+            "name": "senior",
+            "stack": "1C",
+            "query": null,
+            "offer": 2000
         }
     ]
 }

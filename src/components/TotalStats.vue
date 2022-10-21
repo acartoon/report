@@ -58,9 +58,6 @@
                     :data="query.data"
                     :labels="query.labels"
                 />
-                <!--                <div :key="item.name" v-for="item in query.all.values">-->
-                <!--                    {{ item.name }} - {{ item.count }}-->
-                <!--                </div>-->
             </div>
         </div>
         <!--        разработчики-->
@@ -81,29 +78,25 @@
                 />
             </div>
         </div>
-        <!--        -->
+        <!--   блок итого     -->
         <div class="base-wrapper">
-            <BaseHeading :class="$style.title" tag="h2"
-                >7. Сравнение рейтов</BaseHeading
-            >
+            <BaseHeading :class="$style.title" tag="h2">
+                7. Сравнение рейтов
+            </BaseHeading>
             <BaseTable :data="totalData.data" :heading="totalData.heading" />
         </div>
     </BaseContainer>
 </template>
 
 <script>
-// import StatsPie from '@/components/StatsPie'
-// import TablePercent from '@/components/TablePercent'
 import BaseContainer from '@/UI/BaseContainer'
 import StatsBar from '@/components/StatsBar'
 import BaseTable from '@/UI/BaseTable'
 import BaseHeading from '@/UI/BaseHeading'
 import TableBlock from '@/components/TableBlock'
-import compareNumeric from // compareNumeric3, // compareNumeric2,
-// compareNumeric4,
-// compareNumeric5,
-// compareNumeric6,
-'@/helpers/compareNumeric'
+import { customSort } from '@/helpers/compareNumeric'
+import { SORT_COMPARE_TABLE } from '@/constants'
+import splitTools from '@/helpers/splitTools'
 
 const TITLES = [
     'Грейд',
@@ -124,26 +117,18 @@ export default {
     },
     computed: {
         totalData() {
-            const data = this.total
-                .slice(0)
-                // .sort(compareNumeric2)
-                // .sort(compareNumeric3)
-                // .sort(compareNumeric4)
-                // .sort(compareNumeric5)
-                // .sort(compareNumeric6)
-                .map((item) => ({
+            const data = customSort(this.total, SORT_COMPARE_TABLE).map(
+                (item) => ({
                     ...item,
                     query: item.query ?? '-',
                     offer: item.offer ?? '-',
-                }))
-
+                })
+            )
             return { data, heading: TITLES }
         },
         requestsQuery() {
             return this.requests.tools.map((el) => {
-                const values = el.values.slice(0).sort(compareNumeric)
-                const labels = values.map((item) => item.name)
-                const data = values.map((item) => item.count)
+                const { labels, data } = splitTools(el)
 
                 return {
                     all: el,
@@ -155,9 +140,7 @@ export default {
         },
         requestsDevelopers() {
             return this.developers.tools.map((el) => {
-                const values = el.values.slice(0).sort(compareNumeric)
-                const labels = values.map((item) => item.name)
-                const data = values.map((item) => item.count)
+                const { labels, data } = splitTools(el)
 
                 return {
                     name: el.name,
@@ -171,10 +154,6 @@ export default {
 </script>
 
 <style module>
-.wrapper {
-    margin-bottom: 80px;
-}
-
 .title {
     text-align: center;
 }

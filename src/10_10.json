@@ -609,6 +609,10 @@
                         "count": 6
                     },
                     {
+                        "name": "Android",
+                        "count": 4
+                    },
+                    {
                         "name": "Flutter",
                         "count": 1
                     },
@@ -652,28 +656,41 @@
     },
     "total": [
         {
-            "name": "lead",
-            "stack": "React",
-            "query": 2300,
+            "name": "middle",
+            "stack": "C++",
+            "query": 2080,
             "offer": null
         },
         {
             "name": "senior",
-            "stack": "DevOps",
+            "stack": "C++",
+            "query": 2500,
+            "offer": null
+        },
+
+        {
+            "name": "middle+/senior",
+            "stack": "PHP",
+            "query": 1700,
+            "offer": null
+        },
+        {
+            "name": "senior",
+            "stack": "Java",
+            "query": 2000,
+            "offer": null
+        },
+        {
+            "name": "middle/middle+",
+            "stack": "C#",
             "query": 1900,
             "offer": null
         },
         {
             "name": "senior",
-            "stack": "Bitrix",
-            "query": 2000,
+            "stack": "Symfony",
+            "query": 1800,
             "offer": null
-        },
-        {
-            "name": "senior",
-            "stack": "SA",
-            "query": 1950,
-            "offer": 2075
         },
         {
             "name": "senior",
@@ -682,16 +699,28 @@
             "offer": null
         },
         {
-            "name": "senior",
+            "name": "lead",
             "stack": "Java",
-            "query": null,
-            "offer": 2475
+            "query": 2600,
+            "offer": null
+        },
+        {
+            "name": "middle/senior",
+            "stack": "PHP",
+            "query": 1900,
+            "offer": null
         },
         {
             "name": "senior",
-            "stack": "UX/UI",
-            "query": null,
-            "offer": 2000
+            "stack": "Flutter",
+            "query": 2200,
+            "offer": null
+        },
+        {
+            "name": "middle+/senior",
+            "stack": "Data analyst",
+            "query": 2500,
+            "offer": null
         },
         {
             "name": "senior",
@@ -700,94 +729,28 @@
             "offer": 2000
         },
         {
-            "name": "middle+/senior",
-            "stack": "PHP",
-            "query": 1700,
-            "offer": null
-        },
-        {
-            "name": "middle+/senior",
+            "name": "middle",
             "stack": "Python",
-            "query": 1700,
-            "offer": null
-        },
-        {
-            "name": "middle+/senior",
-            "stack": "iOS",
-            "query": 2200,
-            "offer": null
-        },
-        {
-            "name": "middle/senior",
-            "stack": "SA",
-            "query": 1800,
-            "offer": null
+            "query": null,
+            "offer": 1900
         },
         {
             "name": "middle+",
-            "stack": "iOS",
+            "stack": "Python",
             "query": null,
-            "offer": 1362.5
+            "offer": 1900
+        },
+        {
+            "name": "middle",
+            "stack": "Java",
+            "query": null,
+            "offer": 2100
         },
         {
             "name": "middle+",
             "stack": "Java",
             "query": null,
-            "offer": 2200
-        },
-        {
-            "name": "middle+",
-            "stack": "SA",
-            "query": null,
-            "offer": 2000
-        },
-        {
-            "name": "middle",
-            "stack": ".Net",
-            "query": null,
-            "offer": 1400
-        },
-        {
-            "name": "middle",
-            "stack": "UX/UI",
-            "query": null,
-            "offer": 2000
-        },
-        {
-            "name": "middle",
-            "stack": "JS+C#",
-            "query": 1850,
-            "offer": null
-        },
-        {
-            "name": "middle",
-            "stack": "React",
-            "query": null,
-            "offer": 1500
-        },
-        {
-            "name": "middle",
-            "stack": "Java+Go",
-            "query": null,
-            "offer": 2350
-        },
-        {
-            "name": "junior+",
-            "stack": "Java+Go",
-            "query": null,
-            "offer": 1950
-        },
-        {
-            "name": "junior+",
-            "stack": "Python",
-            "query": null,
             "offer": 2100
-        },
-        {
-            "name": "junior+",
-            "stack": "QA",
-            "query": null,
-            "offer": 1400
         }
     ]
 }

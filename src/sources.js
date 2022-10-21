@@ -15,7 +15,6 @@ export default [
         name: 'Extyl - запросы ресурсов на аутстаф',
         link: 'https://t.me/extyl_outstaff',
     },
-    { name: 'Extyl - запросы ресурсов на аутстаф', link: false },
     {
         name: 'Subcontractors / IT Outstaff / IT Outsource/ Freelance',
         link: 'https://t.me/it_outstaff',

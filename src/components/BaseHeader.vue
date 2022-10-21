@@ -24,7 +24,7 @@
             >
             проводит ежедневный мониторинг открытых источников, в которых
             размещаются запросы на проекты и информация о свободных
-            разработчиков.
+            разработчиках.
         </BaseHeading>
     </BaseContainer>
 </template>
@@ -102,7 +102,6 @@ export default {
 @media (min-width: 576px) {
     .heading {
         text-align: center;
-        /*margin-bottom: 30px;*/
     }
 
     .subheading {

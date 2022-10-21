@@ -8,20 +8,14 @@ export const label = (context) => {
     return label
 }
 
-export const tooltipOptions = {
-    displayColors: false,
-    callbacks: {
-        label: function (context) {
-            console.log(context)
-            let label = context.dataset.label || ''
-
-            if (label) {
-                label += ': '
-            }
-            if (context.parsed.y !== null) {
-                label += context.parsed.y
-            }
-            return label
-        },
-    },
-}
+export const SORT_COMPARE_TABLE = [
+    'lead',
+    'senior',
+    'middle+/senior',
+    'middle/senior',
+    'middle/middle+',
+    'middle+',
+    'middle',
+    'junior+',
+    'junior',
+]
