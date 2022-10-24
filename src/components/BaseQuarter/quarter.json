@@ -1,0 +1,1081 @@
+{
+  "type": "quarter",
+  "period": {
+    "quarter": 4,
+    "year": 2022
+  },
+  "requests": {
+    "current": 238,
+    "previous": 225,
+    "max": 1,
+    "min": 5,
+    "grades": [
+      {
+        "name": "lead",
+        "count": 5,
+        "percent": 7.94,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "senior",
+        "count": 21,
+        "percent": 33.33,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 20,
+            "percent": 40
+          },
+          {
+            "month": "Ноябрь",
+            "count": 20,
+            "percent": 20
+          },
+          {
+            "month": "Декабрь",
+            "count": 20,
+            "percent": 20
+          }
+        ]
+      },
+      {
+        "name": "senior/middle+",
+        "count": 7,
+        "percent": 11.11,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "senior/middle",
+        "count": 7,
+        "percent": 11.11,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "middle+",
+        "count": 2,
+        "percent": 3.17,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "middle+/middle",
+        "count": 5,
+        "percent": 7.94,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "без рейда",
+        "count": 5,
+        "percent": 7.94,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      }
+    ],
+    "area": [
+      {
+        "name": "FE",
+        "count": 8,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "BE",
+        "count": 27,
+        "percent": 42.86,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Fullstack",
+        "count": 3,
+        "percent": 4.76,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "SA,BA,QA,PM",
+        "count": 11,
+        "percent": 17.46,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "count": 3,
+        "percent": 4.76,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Mobile",
+        "count": 8,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Design",
+        "count": 0,
+        "percent": 0,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "1С, Bitrix",
+        "count": 3,
+        "percent": 4.76,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "name": "React",
+        "count": 75,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 20,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 40,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 15,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Vue",
+        "count": 37,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 8,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 9,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 20,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "PHP",
+        "count": 38,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 4,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 16,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 18,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "JAVA",
+        "count": 78,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 34,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 28,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 16,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "count": 26,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 15,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 8,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Flutter",
+        "count": 28,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 14,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 5,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 9,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "QA",
+        "count": 33,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 5,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 8,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 20,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "1С",
+        "count": 12,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      }
+    ]
+  },
+  "developers": {
+    "current": 340,
+    "previous": 303,
+    "max": 1,
+    "min": 5,
+    "grades": [
+      {
+        "name": "lead",
+        "count": 5,
+        "percent": 7.94,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "senior",
+        "count": 21,
+        "percent": 33.33,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 20,
+            "percent": 40
+          },
+          {
+            "month": "Ноябрь",
+            "count": 20,
+            "percent": 20
+          },
+          {
+            "month": "Декабрь",
+            "count": 20,
+            "percent": 20
+          }
+        ]
+      },
+      {
+        "name": "senior/middle+",
+        "count": 7,
+        "percent": 11.11,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "senior/middle",
+        "count": 7,
+        "percent": 11.11,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "middle+",
+        "count": 2,
+        "percent": 3.17,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "middle+/middle",
+        "count": 5,
+        "percent": 7.94,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "без рейда",
+        "count": 5,
+        "percent": 7.94,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      }
+    ],
+    "area": [
+      {
+        "name": "FE",
+        "count": 8,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "BE",
+        "count": 27,
+        "percent": 42.86,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Fullstack",
+        "count": 3,
+        "percent": 4.76,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "SA,BA,QA,PM",
+        "count": 11,
+        "percent": 17.46,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "count": 3,
+        "percent": 4.76,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Mobile",
+        "count": 8,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Design",
+        "count": 0,
+        "percent": 0,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "1С, Bitrix",
+        "count": 3,
+        "percent": 4.76,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "name": "React",
+        "count": 75,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 20,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 40,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 15,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Vue",
+        "count": 37,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 8,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 9,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 20,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "PHP",
+        "count": 38,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 4,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 16,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 18,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "JAVA",
+        "count": 78,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 34,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 28,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 16,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "count": 26,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 15,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 8,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "Flutter",
+        "count": 28,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 14,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 5,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 9,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "QA",
+        "count": 33,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 5,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 8,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 20,
+            "percent": 3
+          }
+        ]
+      },
+      {
+        "name": "1С",
+        "count": 12,
+        "percent": 12.70,
+        "detail": [
+          {
+            "month": "Октябрь",
+            "count": 6,
+            "percent": 20
+          },
+          {
+            "month": "Ноябрь",
+            "count": 3,
+            "percent": 3
+          },
+          {
+            "month": "Декабрь",
+            "count": 3,
+            "percent": 3
+          }
+        ]
+      }
+    ]
+  },
+  "total": [
+    {
+      "name": "middle",
+      "stack": "C++",
+      "query": 2080,
+      "offer": null
+    },
+    {
+      "name": "senior",
+      "stack": "C++",
+      "query": 2500,
+      "offer": null
+    },
+    {
+      "name": "middle+/senior",
+      "stack": "PHP",
+      "query": 1700,
+      "offer": null
+    },
+    {
+      "name": "senior",
+      "stack": "Java",
+      "query": 2000,
+      "offer": null
+    },
+    {
+      "name": "middle/middle+",
+      "stack": "C#",
+      "query": 1900,
+      "offer": null
+    },
+    {
+      "name": "senior",
+      "stack": "Symfony",
+      "query": 1800,
+      "offer": null
+    }
+  ]
+}

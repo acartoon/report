@@ -32,7 +32,6 @@ ChartJS.register(
     LinearScale,
     ArcElement
 )
-// const luminosity = 'blue'
 
 export default {
     components: { Bar },

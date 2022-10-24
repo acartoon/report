@@ -1,48 +1,28 @@
 <template>
-    <BaseHeader :start="period.start" :end="period.end" :type="type" />
-    <StartInfo :projects="projectsStats" :developers="developersStats" />
-    <TotalStats :requests="requests" :developers="developers" :total="total" />
+    <Component :is="component" />
 </template>
 
 <script>
-import BaseHeader from './components/BaseHeader.vue'
-import StartInfo from '@/components/StartInfo'
-import TotalStats from '@/components/TotalStats'
-import json from './10_10.json'
+import BaseWeek from '@/components/BaseWeek'
+import BaseMonth from '@/components/BaseMonth'
+import BaseQuarter from '@/components/BaseQuarter'
 
+console.log(process.env)
 export default {
-    components: { StartInfo, BaseHeader, TotalStats },
+    components: { BaseMonth, BaseWeek, BaseQuarter },
     data() {
         return {
-            type: json.type,
-            period: json.period,
-            requests: json.requests,
-            developers: json.developers,
-            total: json.total,
+            type: process.env.VUE_APP_REPORT_TYPE,
         }
     },
     computed: {
-        datasets() {
-            return this.requests.grades.map((el) => el.percent)
-        },
-        labels() {
-            return this.requests.grades.map((el) => el.name)
-        },
-        projectsStats() {
-            return {
-                current: this.requests.current,
-                previous: this.requests.previous,
-                max: this.requests.max,
-                min: this.requests.min,
+        component() {
+            const component = {
+                week: BaseWeek,
+                month: BaseMonth,
+                quarter: BaseQuarter,
             }
-        },
-        developersStats() {
-            return {
-                current: this.developers.current,
-                previous: this.developers.previous,
-                max: this.developers.max,
-                min: this.developers.min,
-            }
+            return component[this.type]
         },
     },
 }
@@ -50,7 +30,6 @@ export default {
 <style>
 html {
     font-family: 'Roboto', sans-serif;
-
     margin: 0;
     color: #3c3f40;
     font-size: 16px;
@@ -63,9 +42,5 @@ body {
 
 p {
     margin-bottom: 1rem;
-}
-
-.base-wrapper {
-    margin-bottom: 120px;
 }
 </style>

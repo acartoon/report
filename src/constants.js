@@ -19,3 +19,14 @@ export const SORT_COMPARE_TABLE = [
     'junior+',
     'junior',
 ]
+
+export const sorting = [
+    'FE',
+    'BE',
+    'Fullstack',
+    'SA,BA,QA,PM',
+    'DevOps',
+    'Mobile',
+    'Design',
+    '1С, Bitrix',
+]

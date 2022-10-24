@@ -1,135 +1,43 @@
 <template>
-    <BaseContainer>
-        <div class="base-wrapper">
-            <BaseHeading :class="$style.subheading" tag="h3"
-                >Источники выборки:</BaseHeading
-            >
-            <ol :class="$style.list">
-                <li
-                    :class="$style.listItem"
-                    :key="idx"
-                    v-for="(source, idx) in sources"
-                >
-                    {{ source.name }} (<base-link
-                        :to="source.link"
-                        target="_blank"
-                        >{{ source.link }}</base-link
-                    >)
-                </li>
-            </ol>
-        </div>
+    <div>
         <div class="base-wrapper">
             <BaseHeading :class="$style.subheading" tag="h2"
                 >1. Количество запросов/разработчиков</BaseHeading
             >
-            <BaseTable :heading="stats.heading" :data="stats.data" />
+            <BaseTable :heading="statsCount.heading" :data="statsCount.data" />
         </div>
 
-        <div class="base-wrapper">
-            <BaseHeading :class="$style.subheading" tag="h2"
-                >2. Максимум/минимум запросов/разработчиков</BaseHeading
-            >
+        <div v-if="statsCompared" class="base-wrapper">
+            <BaseHeading :class="$style.subheading" tag="h2">
+                2. Максимум/минимум запросов/разработчиков
+            </BaseHeading>
             <BaseTable
-                :heading="['', 'Максимум', 'Минимум']"
-                :data="[
-                    [
-                        'Запросы',
-                        `${projects.max.count} (${projects.max.date})`,
-                        `${projects.min.count} (${projects.min.date})`,
-                    ],
-                    [
-                        'Разработчики',
-                        `${developers.max.count} (${developers.max.date})`,
-                        `${developers.min.count} (${developers.min.date})`,
-                    ],
-                ]"
+                :heading="statsCompared.heading"
+                :data="statsCompared.data"
             />
         </div>
-    </BaseContainer>
+    </div>
 </template>
 
 <script>
 import sources from '@/sources'
-import BaseContainer from '@/UI/BaseContainer'
 import BaseHeading from '@/UI/BaseHeading'
 import BaseTable from '@/UI/BaseTable'
-import BaseLink from '@/UI/BaseLink'
 
 export default {
     name: 'StartInfo',
-    props: ['projects', 'developers'],
-    components: { BaseContainer, BaseHeading, BaseTable, BaseLink },
+    props: ['statsCount', 'statsCompared'],
+    components: { BaseHeading, BaseTable },
     data() {
         return {
             sources: sources,
         }
     },
-    computed: {
-        stats() {
-            const data = [
-                ['Запросы', this.projects.current],
-                ['Разработчики', this.developers.current],
-            ]
-
-            if (this.projects.previous) {
-                data[0].push(this.projects.previous)
-            }
-            if (this.developers.previous) {
-                data[1].push(this.developers.previous)
-            }
-
-            const heading = ['', 'Текущая неделя']
-
-            if (this.projects.previous || this.developers.previous) {
-                heading.push('Предыдущая неделя')
-            }
-
-            return {
-                data,
-                heading,
-            }
-        },
-    },
 }
 </script>
 
 <style module>
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    counter-reset: counter;
-}
-
-.listItem {
-    padding-bottom: 15px;
-    font-size: 16px;
-}
-
-.listItem:before {
-    counter-increment: counter;
-    content: counter(counter) '. ';
-    left: 0;
-}
-
 .subheading {
     text-align: center;
-}
-
-.bold {
-    font-weight: 500;
-}
-
-@media (min-width: 768px) {
-    .list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .listItem {
-        width: 50%;
-        box-sizing: border-box;
-        padding: 0 10px 15px;
-    }
 }
 </style>

@@ -12,7 +12,7 @@
             {{ title }} отчет заявок и предложений
         </BaseHeading>
         <BaseHeading :class="$style.subtitle" tag="h3">
-            период с {{ start }} по {{ end }}
+            период: {{ period }}
         </BaseHeading>
         <BaseHeading :class="$style.subheading" tag="h4">
             Компания
@@ -26,37 +26,50 @@
             размещаются запросы на проекты и информация о свободных
             разработчиках.
         </BaseHeading>
+        <div class="base-wrapper">
+            <BaseHeading :class="$style.subheading" tag="h3">
+                Источники выборки:
+            </BaseHeading>
+            <BaseList :list="sources">
+                <template #default="{ item }">
+                    {{ item.name }} (<base-link :to="item.link" target="_blank"
+                        >{{ item.link }} </base-link
+                    >)
+                </template>
+            </BaseList>
+        </div>
     </BaseContainer>
 </template>
 
 <script>
 import BaseContainer from '@/UI/BaseContainer'
 import BaseHeading from '@/UI/BaseHeading'
-import LogoArda from '@/components/LogoArda'
-import LogoItPelag from '@/components/LogoItPelag'
+import LogoArda from './LogoArda'
+import LogoItPelag from './LogoItPelag'
 import BaseLink from '@/UI/BaseLink'
 import { ARDA_SITE, IT_PELAG_SITE } from '@/constants'
+import BaseList from '@/UI/BaseList'
+import sources from '@/sources'
 
 export default {
     name: 'BaseHeader',
-    props: ['start', 'end', 'type'],
-    components: { BaseLink, LogoArda, BaseContainer, BaseHeading, LogoItPelag },
+    props: ['period'],
+
+    components: {
+        BaseLink,
+        LogoArda,
+        BaseContainer,
+        BaseHeading,
+        LogoItPelag,
+        BaseList,
+    },
     data() {
         return {
+            title: process.env.VUE_APP_TITLE,
+            sources: sources,
             arda: ARDA_SITE,
             itPelag: IT_PELAG_SITE,
         }
-    },
-    computed: {
-        title() {
-            const titles = {
-                week: 'Еженедельный',
-                month: 'Ежемесячный',
-                quarter: 'Квартальный',
-            }
-            console.log(this.type)
-            return titles[this.type]
-        },
     },
 }
 </script>
